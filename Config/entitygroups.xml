@@ -1,0 +1,29 @@
+<config>
+	<append xpath="/entitygroups">
+		<entitygroup name="scoutZombiesGS1">
+		zombieScreamer
+	</entitygroup>
+		<entitygroup name="scoutZombiesGS50">
+		zombieScreamer
+	</entitygroup>
+		<entitygroup name="scoutZombiesGS100">
+		zombieScreamerFeral, 0.5
+		zombieScreamerRadiated, 0.5
+	</entitygroup>
+		<entitygroup name="scoutZombiesGS200">
+		zombieScreamer
+	</entitygroup>
+		<entitygroup name="scoutZombiesGS300">
+		zombieScreamer
+	</entitygroup>
+		<entitygroup name="scoutZombiesGS400">
+		zombieScreamer
+	</entitygroup>
+		<entitygroup name="scoutZombiesGS500">
+		zombieScreamer
+	</entitygroup>
+		<entitygroup name="scoutZombiesGS600">
+		zombieScreamer
+	</entitygroup>
+	</append>
+</config>

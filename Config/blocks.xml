@@ -1,0 +1,8 @@
+<config>
+	<append xpath="/blocks">
+		<block name="IDCConfigBlock">
+			<property name="Extends" value="terrDesertGround"/>
+			<property name="GamestagedScouts" value="false"/>
+		</block>
+	</append>
+</config>
