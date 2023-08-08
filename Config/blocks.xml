@@ -3,6 +3,8 @@
 		<block name="IDCConfigBlock">
 			<property name="Extends" value="terrDesertGround"/>
 			<property name="GamestagedScouts" value="false"/>
+			<property name="GamestagedBiomeSpawns" value="false"/>
+			<property name="LogGamestagedBiomeSpawns" value="false"/>
 		</block>
 	</append>
 </config>
