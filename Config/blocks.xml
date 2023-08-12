@@ -4,7 +4,9 @@
 			<property name="Extends" value="terrDesertGround"/>
 			<property name="GamestagedScouts" value="false"/>
 			<property name="GamestagedBiomeSpawns" value="false"/>
+			<property name="PreventZombiesInLandclaims" value="true"/>
 			<property name="LogGamestagedBiomeSpawns" value="false"/>
+			<property name="IndividualizedPlayerLevels" value="false"/>
 		</block>
 	</append>
 </config>
