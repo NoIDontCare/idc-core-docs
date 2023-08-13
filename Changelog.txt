@@ -1,0 +1,20 @@
+[2.1.0]
+- Update for compatilibility with A21.1 stable.
+- Passive collectors can now have their sky checks disabled via an xml property.
+- Allow for scout zombies to be gamestaged.
+- Allow for biome zombie spawns to be gamestaged.
+- Config option to prevent zombie spawns inside landclaims.
+- Allow for player levels to require specific xp amounts and allow for variable skill point rewards per level.
+- Passive Collector V2 released. Old collector will remain for now for compatibility purposes. Will be removed in A22.
+
+- Fix passive collector sometimes sharing recipes with other collectors.
+- Fix occasional NRE when opening passive collector.
+
+[2.0.2]
+- Update for compatibility for A21.1b12.
+
+[2.0.1]
+- Fix occasional NullReferenceException in multiplayer.
+
+[2.0.0]
+- Initial public release.
