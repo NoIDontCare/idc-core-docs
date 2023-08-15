@@ -1,3 +1,8 @@
+[2.1.1]
+- Add config option to allow trader talk icons to be disabled.
+- Configurable player levels can now use a set amount increase per level for levels not explicitly defined.
+- Add screamer configuration options. Allows for multiple screamers to be spawned when heat in a chunk hits 100.
+
 [2.1.0]
 - Update for compatilibility with A21.1 stable.
 - Passive collectors can now have their sky checks disabled via an xml property.

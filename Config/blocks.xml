@@ -7,6 +7,17 @@
 			<property name="PreventZombiesInLandclaims" value="true"/>
 			<property name="LogGamestagedBiomeSpawns" value="false"/>
 			<property name="IndividualizedPlayerLevels" value="false"/>
+			
+			<property class="TraderIconsConfig">
+				<property name="NoTraderIcons" value="false"/>
+				<property name="NoTraderIconsNight" value="true"/>
+			</property>
+			
+			<property class="ScreamerOptions">
+				<property name="MultiScreamerEnabled" value="false"/>
+				<property name="MultiScreamerChance" value="0.5"/>
+				<property name="MultiScreamerBounds" value="2,4"/>
+			</property>
 		</block>
 		
 		<block name="ctnPassiveCollectorV2Test">
