@@ -1,0 +1,101 @@
+<config>
+	<append xpath="/items">
+		<item name="gunBotT2JunkTurretIDC">
+			<property name="Tags" value="turretRanged,weapon,ranged,reloadPenalty,drumMagazine,attIntellect,perkTurrets,canHaveCosmetic,turretCrafting,selfLoading"/>
+			<property name="DisplayType" value="rangedTurret"/>
+			<property name="HoldType" value="67"/>
+			<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/JunkTurret/junkTurret_Prefab.prefab"/>
+			<property name="HandMeshfile" value="@:Other/Items/Weapons/Ranged/JunkTurret/junkTurretHeld_Prefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Weight" value="4"/>
+			<property name="TintColor" value="227, 127, 13"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="weapon_jam"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="Group" value="Ammo/Weapons,Robotics"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="EconomicValue" value="500"/>
+			<property name="TraderStageTemplate" value="baseTier2"/>
+			<property name="SellableToTrader" value="true"/>
+			<property name="RequiredPower" value="15"/>
+			<property name="UnlockedBy" value="perkTurrets"/><!-- gunBotT2JunkTurretSchematic, -->
+			<property name="ShowQuality" value="true"/>
+			<property name="IgnoreKeystoneSound" value="true"/>
+			<property name="SoundUnholster" value="weapon_unholster"/>
+			<property name="SoundHolster" value="weapon_holster"/>
+
+			<property class="Action0">
+				<property name="Class" value="Ranged"/>
+				<property name="Delay" value=".8"/> <!-- obsolete if rounds per minute exists -->
+				<!-- <property name="Range" value="40"/> -->
+				<property name="Magazine_items" value="ammoJunkTurretRegular,ammoJunkTurretShell,ammoJunkTurretAP,ammoDartIron,DFammoDartTitanium"/>
+				<property name="Reload_time" value="3.9"/>
+				<property name="Sound_start" value="junkturret_fire"/>
+				<property name="Sound_loop" value="junkturret_fire"/>
+				<property name="Sound_repeat" value=""/>
+				<property name="Sound_end" value=""/>
+				<property name="Sound_empty" value="dryfire"/>
+				<property name="Sound_reload" value="m60_reload"/>
+				<property name="AutoReload" value="false"/>
+				<property name="Particles_muzzle_fire" value="gunfire_junkturret_fpv"/>
+				<!-- <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/> -->
+				<!-- <property name="DamageBonus.head" value="3"/>
+				<property name="DamageBonus.wood" value="2.5"/>
+				<property name="DamageBonus.earth" value=".2"/> -->
+				<property name="ScopeOffset" value="0,0,0"/>
+				<property name="SideOffset" value="0,0,0"/>
+				<property name="BarrelOffset" value="0,0,0"/>
+				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+					<property name="triggerEffectTriggerPullDualsense" value="PistolTrigger"/>
+					<property name="triggerEffectTriggerPullXbox" value="PistolTrigger"/>
+					<property name="triggerEffectShootDualsense" value="PistolShoot"/>
+					<property name="triggerEffectShootXbox" value="PistolShoot"/>
+			</property>
+			<property class="Action1">
+				<property name="Class" value="SpawnTurret"/>
+				<property name="Turret" value="junkTurretGunIDC"/>
+				<property name="PreviewSize" value="0.75,0.75,0.75"/>
+				<!--<requirement name="ProgressionLevel" progression_name="perkTurrets" operation="GTE" value="3"/>-->
+			</property>
+			<effect_group name="gunBotT2JunkTurret">
+				<passive_effect name="MaxRange" operation="base_set" value="15"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="10"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3"/>
+				
+				<passive_effect name="EntityDamage" operation="perc_add" value="0,.35" tier="1,80"/>
+				<passive_effect name="MaxRange" operation="perc_add" value="0,.35" tier="1,80"/>
+
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="105.6" tags="perkTurrets"/>
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkTurrets"/>
+
+				<passive_effect name="MagazineSize" operation="base_set" value="25,75" tier="1,80" tags="perkTurrets"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkTurrets"/>
+
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="5" tags="perkTurrets"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="5" tags="perkTurrets"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.13" tags="perkTurrets"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.05" tags="perkTurrets"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".15" tags="perkTurrets"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="perc_add" value=".3" tags="perkTurrets"/>
+
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="3" tags="perkTurrets"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="3" tags="perkTurrets"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-2" tags="perkTurrets"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="2" tags="perkTurrets"/>
+
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="0" tags="perkTurrets"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="1" tags="perkTurrets"/>
+
+				<passive_effect name="JunkTurretActiveRange" operation="base_set" value="30"/>
+
+				<passive_effect name="DegradationMax" operation="base_set" value="100,1200" tier="1,80"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0.5"/>
+				<passive_effect name="ModSlots" operation="base_set" value="1,1,2,3,4,5,6,7,8" tier="1,11,21,31,41,51,61,71,80"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".05" tags="EntityDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+			</effect_group>
+		</item>
+
+	</append>
+</config>

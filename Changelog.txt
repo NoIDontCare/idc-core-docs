@@ -1,3 +1,17 @@
+[2.2.0]
+- Add config option to disable progression logging.
+- Add ammo box classes. Capable of refilling turret ammo from its inventory.
+- Add storage machine classes. Capable of storing 65,000 stacks of items in a single block.
+- Add console command to give quests to player.
+- Add ability to set zombie move speeds per biome.
+- Add crop trampling options. Configurable via blocks.xml file. Disabled by default.
+- Add multi-output recipe functionality. New tab in crafting UI showing outputs.
+- Add block that gives buffs when collided with. 
+
+- Fixed skill points per level mods breaking if individualized progression was disabled.
+- Fixed speed modifiers on passive collectors not working properly.
+- Fix passive collectors being pickable with modifiers on them.
+
 [2.1.1]
 - Add config option to allow trader talk icons to be disabled.
 - Configurable player levels can now use a set amount increase per level for levels not explicitly defined.

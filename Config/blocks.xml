@@ -7,19 +7,30 @@
 			<property name="PreventZombiesInLandclaims" value="true"/>
 			<property name="LogGamestagedBiomeSpawns" value="false"/>
 			<property name="IndividualizedPlayerLevels" value="false"/>
-			
+			<property name="LogProgressionParsing" value="false"/>
 			<property class="TraderIconsConfig">
 				<property name="NoTraderIcons" value="false"/>
 				<property name="NoTraderIconsNight" value="true"/>
 			</property>
-			
 			<property class="ScreamerOptions">
 				<property name="MultiScreamerEnabled" value="false"/>
 				<property name="MultiScreamerChance" value="0.5"/>
 				<property name="MultiScreamerBounds" value="2,4"/>
 			</property>
+			
+			<property class="TurretOptions">
+				<property name="AdditionalTurrets" value="gunBotT2JunkTurretIDC"/>
+			</property>
+			
+			<property class="PlantOptions">
+				<property name="ZombiesTrampleCrops" value="true"/>
+				<property name="AnimalsTrampleCrops" value="false"/>
+				<property name="PlayersTrampleCrops" value="false"/>
+				<property name="CropTrampleTag" value="cropTrample"/>
+			</property>
+			
+			<property name="DebugTools" value="false"/>
 		</block>
-		
 		<block name="ctnPassiveCollectorV2Test">
 			<property name="CustomIcon" value="cntDewCollector"/>
 			<property name="Class" value="PassiveCollectorV2, IDCCoreV2"/>
@@ -61,17 +72,12 @@
 			<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
 			<property name="Tags" value="workstationSkill,twitch_workstation"/>
 			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
-			
 			<property name="NumRolls" value="3"/>
-			
 			<property name="HasModifiers" value="true"/>
 			<property name="HasItemConversions" value="true"/>
-			
 			<property name="ContColumns" value="3"/>
 			<property name="ContRows" value="1"/>
-			
 			<item_conversion item="drinkJarBoiledWater" lower_range="1" upper_range="1"/>
-			
 		</block>
 	</append>
 </config>

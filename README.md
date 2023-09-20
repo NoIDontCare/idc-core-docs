@@ -1,1 +1,1 @@
-# idc-core-docs
+# idc-core
