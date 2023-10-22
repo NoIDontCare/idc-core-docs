@@ -1,10 +1,31 @@
+[2.2.5]
+- Storage machine item hover colors are now XML based. 
+
+- Fix hydroponics basins throwing exception if unusable fertilizer was present.
+- Fix random NRE when repairing with multi output recipes enabled (this shouldn't have been needed).
+
+[2.2.4]
+- Passive collector modifiers can now be shift clicked in and out of modifier slots.
+
+- Fix all issues with multi output recipes.
+- Fix random NRE when changing biomes.
+
+[2.2.3]
+- Fix crafted items not counting towards quests.
+
+[2.2.2]
+- Fix NRE when scrapping in workstations.
+
+[2.2.1]
+- Fix NRE when SMX is installed. Fill look to full compatiblity in the future.
+
 [2.2.0]
 - Add config option to disable progression logging.
 - Add ammo box classes. Capable of refilling turret ammo from its inventory.
 - Add storage machine classes. Capable of storing 65,000 stacks of items in a single block.
 - Add console command to give quests to player.
 - Add ability to set zombie move speeds per biome.
-- Add crop trampling options. Configurable via blocks.xml file. Disabled by default.
+- Add crop trampling options. Configurable via blocks.xml file.
 - Add multi-output recipe functionality. New tab in crafting UI showing outputs.
 - Add block that gives buffs when collided with. 
 

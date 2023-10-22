@@ -23,11 +23,13 @@
 			</property>
 			
 			<property class="PlantOptions">
-				<property name="ZombiesTrampleCrops" value="true"/>
+				<property name="ZombiesTrampleCrops" value="false"/>
 				<property name="AnimalsTrampleCrops" value="false"/>
 				<property name="PlayersTrampleCrops" value="false"/>
 				<property name="CropTrampleTag" value="cropTrample"/>
 			</property>
+			
+			<property name="MultipleOutputRecipes" value="false"/>
 			
 			<property name="DebugTools" value="false"/>
 		</block>
