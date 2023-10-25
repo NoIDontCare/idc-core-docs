@@ -1,8 +1,10 @@
 [2.2.5]
 - Storage machine item hover colors are now XML based. 
+- Hydroponics basins can have water bucketed into them.
 
 - Fix hydroponics basins throwing exception if unusable fertilizer was present.
 - Fix random NRE when repairing with multi output recipes enabled (this shouldn't have been needed).
+- Fix workstations not consuming items when crafting.
 
 [2.2.4]
 - Passive collector modifiers can now be shift clicked in and out of modifier slots.
