@@ -32,6 +32,7 @@
 			<property name="MultipleOutputRecipes" value="false"/>
 			
 			<property name="DebugTools" value="false"/>
+			<property name="DebugLogging" value="false"/>
 		</block>
 		<block name="ctnPassiveCollectorV2Test">
 			<property name="CustomIcon" value="cntDewCollector"/>

@@ -1,3 +1,42 @@
+[2.4.3]
+- Add MinEvent to generate heat in a chunk.
+- Add MinEvent to set an entities walk type. 
+
+[2.4.2]
+- Fix ammo box sometimes getting "stuck" reloading a single turret.
+
+[2.4.1]
+- Fix reported NRE with quality mod patch.
+
+[2.4.0]
+- Hydroponics basins can now optionally not require water.
+- Hydroponics basins can now consume seeds if desired.
+- Hydroponics basins can produce different outputs from the same seed.
+- Add patch to make quality mod on a per trader basis.
+- Add patch to allow for randomized entity material swapping.
+- Add Debug logging config option. Reduces log spam for non-critical IDCCore information. Errors will always print to log.
+- MOR can now override recipe name, icon, description, tint. See documentation.
+
+[2.3.1]
+- Add patch that can restrict the biomes a block can be placed in.
+- Add new XUiC_RequiredItemStack controller that displays required item name when hovered.
+
+- Fix XUiC_PassiveCollectorContainer failsafe causing console errors when it shouldn't.
+- Fix PassiveCollectorV2 throwing InvalidCastExceptions in multiplayer if block ids have shifted.
+
+[2.3.0]
+- Update for compatibility with A21.2b30.
+- Full redesign of multi output recipe system.
+- Multi output recipes now work with perks.
+- Add new trader entity class that is killable.
+
+[2.2.6]
+- Update for compatibility with A21.2b26.
+- Storage machine now allows for items to be sorted.
+- Add patch to make vehicle damage taken configurable on a per vehicle basis.
+
+- Fix random NRE when crafting with multi output recipes enabled.
+
 [2.2.5]
 - Storage machine item hover colors are now XML based. 
 - Hydroponics basins can have water bucketed into them.
