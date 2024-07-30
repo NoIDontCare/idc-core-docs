@@ -20,7 +20,7 @@
 			</rect>
 		</recipe_output_header>
 		<recipe_output_row>
-		<rect name="row" width="447" height="50" controller="IDC_Core.RecipeOutputEntry,IDCCoreV2">
+		<rect name="row" width="447" height="50" controller="IDC_Core.RecipeOutputEntry,IDCCore">
 			<rect depth="2" width="65" height="48">
 				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,2" width="71" height="53" color="[black]" type="sliced" fillcenter="false" />
 
@@ -39,5 +39,13 @@
 			</rect>
 			</rect>
 		</recipe_output_row>
+		<journal_entry>
+		<rect width="450" height="43" controller="IDC_Core.XUiC_JournalEntry,IDCCore" style="press, hover, scroll" enabled_color="[iconColor]" disabled_color="[disabledLabelColor]" failed_color="255,0,0,255" row_color="[darkGrey]" hover_color="[mediumGrey]" sound="[recipe_click]" failed_icon="ui_game_symbol_x" sound_play_on_hover="[default_hover]">
+			<sprite depth="3" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="450" height="49" color="[black]" type="sliced" fillcenter="false" />
+			<sprite depth="1" name="background" pos="-1,1" height="45" width="446" color="{rowstatecolor}" sprite="{rowstatesprite}" type="sliced" />
+			<sprite depth="5" name="Icon" style="icon32px" pos="8,-3" foregroundlayer="true" sprite="{entryicon}" color="{iconcolor}" />
+			<label depth="4" name="Name" pos="45,-8" width="330" height="30" text="{entrytitle}" color="{textstatecolor}" />
+		</rect>
+	</journal_entry>
 	</append>
 </config>

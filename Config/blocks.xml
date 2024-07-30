@@ -2,12 +2,16 @@
 	<append xpath="/blocks">
 		<block name="IDCConfigBlock">
 			<property name="Extends" value="terrDesertGround"/>
-			<property name="GamestagedScouts" value="false"/>
-			<property name="GamestagedBiomeSpawns" value="false"/>
-			<property name="PreventZombiesInLandclaims" value="true"/>
-			<property name="LogGamestagedBiomeSpawns" value="false"/>
+		
 			<property name="IndividualizedPlayerLevels" value="false"/>
-			<property name="LogProgressionParsing" value="false"/>
+			
+			<property class="ZombieSpawningSettings">
+				<property name="GamestagedScouts" value="false"/>
+				<property name="GamestagedBiomeSpawns" value="false"/>
+				<property name="GameStagedBiomeSpawnsMinDifficulty" value="0"/>
+				<property name="PreventZombiesInLandclaims" value="true"/>
+			</property>
+
 			<property class="TraderIconsConfig">
 				<property name="NoTraderIcons" value="false"/>
 				<property name="NoTraderIconsNight" value="true"/>
@@ -19,7 +23,7 @@
 			</property>
 			
 			<property class="TurretOptions">
-				<property name="AdditionalTurrets" value="gunBotT2JunkTurretIDC"/>
+				<property name="AdditionalTurrets" value=""/>
 			</property>
 			
 			<property class="PlantOptions">
@@ -29,58 +33,12 @@
 				<property name="CropTrampleTag" value="cropTrample"/>
 			</property>
 			
-			<property name="MultipleOutputRecipes" value="false"/>
+			<property name="MultipleOutputRecipes" value="true"/>
 			
 			<property name="DebugTools" value="false"/>
-			<property name="DebugLogging" value="false"/>
-		</block>
-		<block name="ctnPassiveCollectorV2Test">
-			<property name="CustomIcon" value="cntDewCollector"/>
-			<property name="Class" value="PassiveCollectorV2, IDCCoreV2"/>
-			<property name="UnlockedBy" value="craftingWorkstations"/>
-			<property name="WorkstationIcon" value="ui_game_symbol_water"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="DescriptionKey" value="advancedDewCollectorDesc"/>
-			<property name="Material" value="MFuelBarrelPolymer"/>
-			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Furniture/collectorDewPrefab"/>
-			<property name="MultiBlockDim" value="3,3,3"/>
-			<property name="ImposterExchange" value="imposterBlock" param1="116"/>
-			<property name="WaterFlow" value="permitted"/>
-			<property name="Place" value="TowardsPlacerInverted"/>
-			<property name="RestrictSubmergedPlacement" value="true"/>
-			<property name="AllowedRotations" value="Basic90"/>
-			<property name="Path" value="solid"/>
-			<property name="IsDecoration" value="true"/>
-			<property name="StabilitySupport" value="false"/>
-			<property name="OpenSound" value="open_workbench"/>
-			<property name="CloseSound" value="close_workbench"/>
-			<property name="ConvertSound" value="bucketfill_water,1"/>
-			<property name="MinConvertTime" value="15600"/>
-			<property name="MaxConvertTime" value="26000"/>
-			<property name="EconomicValue" value="5"/>
-			<property name="EconomicBundleSize" value="1"/>
-			<property name="SellableToTrader" value="false"/>
-			<property name="MaxDamage" value="1000"/>
-			<property name="HeatMapStrength" value="1"/>
-			<property name="HeatMapTime" value="10000"/>
-			<property name="HeatMapFrequency" value="2000"/>
-			<property class="RepairItems">
-				<property name="resourceScrapPolymers" value="20"/>
-				<property name="resourceForgedIron" value="10"/>
-			</property>
-			<drop event="Destroy" name="ctnPassiveCollectorV2Test" count="1"/>
-			<property name="SortOrder1" value="B281"/>
-			<property name="SortOrder2" value="0100"/>
-			<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
-			<property name="Tags" value="workstationSkill,twitch_workstation"/>
-			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
-			<property name="NumRolls" value="3"/>
-			<property name="HasModifiers" value="true"/>
-			<property name="HasItemConversions" value="true"/>
-			<property name="ContColumns" value="3"/>
-			<property name="ContRows" value="1"/>
-			<item_conversion item="drinkJarBoiledWater" lower_range="1" upper_range="1"/>
+			<property name="DebugLogging" value="true"/>
+			<property name="LogGamestagedBiomeSpawns" value="false"/>
+			<property name="LogProgressionParsing" value="false"/>
 		</block>
 	</append>
 </config>

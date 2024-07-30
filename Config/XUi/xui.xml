@@ -1,8 +1,8 @@
-<config>
+<idccore>
 	<append xpath="/xui/ruleset">
-		<window_group name="passive_collector_ctnPassiveCollectorV2Test" left_panel_valign_top="false" controller="XUiC_PassiveCollectorWindowGroup, IDCCoreV2" close_compass_on_open="true">
-			<window name="windowctnPassiveCollectorV2Test"/>
-			<window name="windowNonPagingHeader" />
+		<window_group name="journal" controller="IDC_Core.XUiC_JournalWindowGroup,IDCCore">
+			<window name="windowJournalList" />
+			<window name="windowJournalEntryDescription" />
 		</window_group>
 	</append>
-</config>
+</idccore>

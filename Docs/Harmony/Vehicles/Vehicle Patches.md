@@ -21,13 +21,3 @@ IDC Core can allow vehicles to only drive on top of specific blocks. This can be
 </config>
 ```
 This patch will allow the minibike to only be drivable on blocks 1, 2, and 3. Any number of blocks can be defined as long as the list is comma separated.
-
-## Damage Reduction
-IDC Core allows for a property to be set on vehicles to reduce the amount of damage the vehicle takes. This property is a percentage multiplier to the damage taken.  The property is defined on a per vehicle basis. The below example will reduce the damage the minibike takes by 75%. 
-```xml
-<config>
-	<append xpath="/entityclasses/entity_class[@name='vehicleMinibike']">
-		<property name="DamageReduction" value="0.75"/>
-	</append>
-</config>
-```
